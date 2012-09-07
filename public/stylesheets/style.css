@@ -2,6 +2,20 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
 a {
   color: #00b7ff;
+}
+
+.content {
+  overflow: auto;
+}
+
+.profile {
+  float: left;
+  margin-right: 20px;
+}
+
+.profile h4, .profile h5 {
+  margin: 0;
 }
