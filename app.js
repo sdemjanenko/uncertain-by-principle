@@ -30,6 +30,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/sublime', routes.sublime);
 
 var port = process.env.PORT || 5000;
 http.createServer(app).listen(port, function(){
