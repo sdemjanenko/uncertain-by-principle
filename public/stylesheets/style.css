@@ -1346,7 +1346,7 @@ a {
   margin-right: auto;
   font: 14px 'Enriqueta', serif;
 }
-.content {
+.wrapper {
   overflow: auto;
   width: 940px;
   display: inline;
