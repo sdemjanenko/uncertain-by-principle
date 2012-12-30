@@ -1,9 +1,24 @@
 ---
 layout: default
 ---
-{% include bio.textile %}
-<ul class="posts">
-    {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span4">
+      <div class="profile">
+        <h4>Stephen Demjanenko</h4>
+        <h5>Javascript & Ruby Hacker, Astrophysicist, rock climber</h5>
+        <img src="/assets/images/profile_pic.jpg" />
+      </div>
+      <div class="intro">
+        I am 23 years old and I live in SF.  I work on the UI team at Meraki.
+        In my spare time, I rock climb, hack and think about the universe.
+      </div>
+    </div>
+
+    <ul class="posts span8">
+        {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+  </div>
+</div>
