@@ -1,0 +1,11 @@
+<div id="bio">
+  <div class="profile">
+    <h4>Stephen Demjanenko</h4>
+    <h5>Javascript & Ruby Hacker, Astrophysicist, rock climber</h5>
+    <img src="/assets/images/profile_pic.jpg" />
+  </div>
+  <div class="intro">
+    I am 23 years old and I live in SF.  I work on the UI team at Meraki.
+    In my spare time, I rock climb, hack and think about the universe.
+  </div>
+</div>
