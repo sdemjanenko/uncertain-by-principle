@@ -6,6 +6,7 @@
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="/assets/javascripts/vendor.min.js"></script>
 
     {% if site.google_analytics %}
     <!-- google analytics async -->
@@ -22,14 +23,12 @@
     {% endif %}
     {% include style.textile %}
   </head>
-  <body>
-    <div class="top">
-      <header>
-          <h1><a href="/">{{ site.title }}</a></h1>
-      </header>
-    </div>
+  <body class="container">
+    <header>
+        <h1><a href="/">{{ site.title }}</a></h1>
+    </header>
 
-    <div id="content-wrapper">
+    <div class="content">
       <h3>{{ page.title }}</h3>
       {{ content }}
     </div>
