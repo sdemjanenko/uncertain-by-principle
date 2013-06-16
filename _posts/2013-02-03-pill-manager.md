@@ -3,8 +3,6 @@ layout: post
 title: Pill Manager
 ---
 
-{{ page.title }}
-================
 I have begun work on a input selector modification library. It will be very much like Chosen/Select2.
 Chosen is a great library and was ahead of its time and is a beautiful solution for multiselects as well as
 large single selects.

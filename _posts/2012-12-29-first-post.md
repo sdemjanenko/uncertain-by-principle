@@ -3,9 +3,6 @@ layout: post
 title: Welcome - First post
 ---
 
-{{ page.title }}
-================
-
 This is my first post.  With the new year about to roll around I have decided that it is time to partake in the coding community.
 This blog will mainly be focused on Ruby and Javascript since I use both every day.
 
