@@ -3,15 +3,7 @@ layout: bare
 ---
 <div class="row">
   <div class="span4">
-    <div class="profile">
-      <h3>Stephen Demjanenko</h3>
-      <p>Javascript & Ruby Hacker, Astrophysicist, rock climber</p>
-      <img src="/assets/images/profile_pic.jpg" />
-    </div>
-    <div class="intro">
-      I am 23 years old and I live in SF.  I work on the UI team at Meraki.
-      In my spare time, I rock climb, hack and think about the universe.
-    </div>
+    {% include profile.textile %}
   </div>
 
   <div class="span4">
@@ -22,13 +14,16 @@ layout: bare
     </ul>
   </div>
 
-  <div id="github-activity" class="span4">
-    Recent github activity
+  <div class="span4">
+    <div id="github-activity"><h5>Github activity</h5></div>
+    <div id="500px-activity"><h5>Photography</h5></div>
   </div>
-  <script type="text/javascript">
-    $(function() {
-      $("#github-activity").rss("http://github.com/sdemjanenko.atom")
-    });
-  </script>
 
+  <script type="text/javascript">
+    $("#github-activity").rss("http://github.com/sdemjanenko.atom", {
+      entryTemplate: "<li><a href='{url}'>{shortBodyPlain}</a></li>"
+    });
+
+    $("#500px-activity").rss("http://500px.com/StephenDemjanenko/rss.rss");
+  </script>
 </div>
