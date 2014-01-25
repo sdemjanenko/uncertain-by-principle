@@ -24,6 +24,8 @@ layout: bare
       entryTemplate: "<li><a href='{url}'>{shortBodyPlain}</a></li>"
     });
 
-    $("#500px-activity").rss("http://500px.com/StephenDemjanenko/rss.rss");
+    $("#500px-activity").rss("http://500px.com/StephenDemjanenko/rss.rss", {
+      entryTemplate: "<li><a href='{url}'>{title}</a><br/><img src='{url}'></li>"
+    });
   </script>
 </div>
