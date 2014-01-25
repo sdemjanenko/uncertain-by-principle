@@ -1,7 +1,7 @@
 <div class="profile">
   <h3>Stephen Demjanenko</h3>
   <p>Javascript & Ruby Hacker</p>
-  <img src="/assets/images/profile_pic_lemur.jpg" height="300" width="300" />
+  <img src="/assets/images/profile_pic_lemur.jpg" height="266" width="300" />
 </div>
 <div class="intro">
   I am 24 years old and I live in SF.  I work on the Dashboard team at Cisco Meraki.
