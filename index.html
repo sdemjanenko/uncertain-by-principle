@@ -18,13 +18,19 @@ layout: bare
   <h5>Photography</h5><div id="500px-activity"></div>
 </div>
 
-<script src="/assets/javascripts/jquery.rss.js"></script>
 <script type="text/javascript">
-  $("#github-activity").rss("http://github.com/sdemjanenko.atom", {
-    layoutTemplate: "<ul data-orbit>{entries}</ul>",
-    entryTemplate: "<li><a href='{url}' target='_blank'>{shortBodyPlain}</a></li>"
-  }, function() {
-    $(document).foundation();
+  $.ajax({
+    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://github.com/sdemjanenko.atom'),
+    dataType: 'json',
+    success: function (data) {
+      if (data.responseData.feed && data.responseData.feed.entries) {
+        var html = [];
+        $.each(data.responseData.feed.entries, function (i, e) {
+          html.push("<li><a href='" + e.link + "'>" + $.trim(e.title.replace("sdemjanenko", "")) + "</a></li>");
+        });
+        $("#github-activity").html("<ul data-orbit>"+html.join("")+"</ul>").foundation();
+      }
+    }
   });
 
   $.get("http://500px.com/StephenDemjanenko/rss.rss", function (data) {
@@ -38,7 +44,6 @@ layout: bare
       var title = el.find("title").text();
       html.push("<li><a href='"+imageUrl+"'><img data-caption='" + title + "' src='" + smallImageUrl + "'></a></li>");
     });
-    $("#500px-activity").html("<ul class='clearing-thumbs' data-clearing>"+html.join("")+"</ul>");
-    $(document).foundation();
+    $("#500px-activity").html("<ul class='clearing-thumbs' data-clearing>"+html.join("")+"</ul>").foundation();
   });
 </script>
