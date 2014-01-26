@@ -7,7 +7,7 @@
     {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="/assets/javascripts/vendor.min.js"></script>
+    {% include style.textile %}
 
     {% if site.google_analytics %}
     <!-- google analytics async -->
@@ -22,7 +22,6 @@
       })();
     </script>
     {% endif %}
-    {% include style.textile %}
   </head>
   <body class="container">
     <header>
@@ -34,5 +33,7 @@
       {{ content }}
     </div>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
   </body>
 </html>
