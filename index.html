@@ -1,31 +1,44 @@
 ---
 layout: bare
 ---
-<div class="row">
-  <div class="span4">
-    {% include profile.textile %}
-  </div>
-
-  <div class="span4">
-    <ul>
-        {% for post in site.posts %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
-  </div>
-
-  <div class="span4">
-    <div id="github-activity"><h5>Github activity</h5></div>
-    <div id="500px-activity"><h5>Photography</h5></div>
-  </div>
-
-  <script type="text/javascript">
-    $("#github-activity").rss("http://github.com/sdemjanenko.atom", {
-      entryTemplate: "<li><a href='{url}'>{shortBodyPlain}</a></li>"
-    });
-
-    $("#500px-activity").rss("http://500px.com/StephenDemjanenko/rss.rss", {
-      entryTemplate: "<li><a href='{url}'>{title}</a><br/>{teaserImage}</li>"
-    });
-  </script>
+<div class="small-4 columns">
+  {% include profile.textile %}
 </div>
+
+<div class="small-4 columns">
+  <ul>
+      {% for post in site.posts %}
+          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+  </ul>
+</div>
+
+<div class="small-4 columns">
+  <h5>Github activity</h5><div id="github-activity"></div>
+  <h5>Photography</h5><div id="500px-activity"></div>
+</div>
+
+<script src="/assets/javascripts/jquery.rss.js"></script>
+<script type="text/javascript">
+  $("#github-activity").rss("http://github.com/sdemjanenko.atom", {
+    layoutTemplate: "<ul data-orbit>{entries}</ul>",
+    entryTemplate: "<li><a href='{url}' target='_blank'>{shortBodyPlain}</a></li>"
+  }, function() {
+    $(document).foundation();
+  });
+
+  $.get("http://500px.com/StephenDemjanenko/rss.rss", function (data) {
+    var html = [];
+    $(data).find("item").each(function () {
+      var el = $(this);
+
+      var description = el.find("description").text();
+      var imageUrl = description.match(/(<img.*?>)/gi)[0].match(/src="(.*?)"/)[1];
+      var smallImageUrl = imageUrl.replace("4.jpg", "2.jpg");
+      var title = el.find("title").text();
+      html.push("<li><a href='"+imageUrl+"'><img data-caption='" + title + "' src='" + smallImageUrl + "'></a></li>");
+    });
+    $("#500px-activity").html("<ul class='clearing-thumbs' data-clearing>"+html.join("")+"</ul>");
+    $(document).foundation();
+  });
+</script>
