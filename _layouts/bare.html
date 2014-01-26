@@ -25,12 +25,12 @@
   </head>
   <body class="container">
     <header>
-        <h1><a href="/">{{ site.title }}</a></h1>
+        <h1><a href="/">{{ site.title }}</a> by {{ site.author.name }}</h1>
     </header>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    
+
     <div class="content">
       <h3>{{ page.title }}</h3>
       {{ content }}
