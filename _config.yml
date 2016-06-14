@@ -13,3 +13,7 @@ author:
 
 google_analytics:
   account: 'UA-37317087-1'
+
+jekyll_timeago:
+  depth: 1
+  suffix: ''
