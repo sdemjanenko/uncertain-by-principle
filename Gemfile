@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby ENV['CUSTOM_RUBY_VERSION'] || '2.2.4'
 
 gem 'jekyll'
 gem 'rack-jekyll'
