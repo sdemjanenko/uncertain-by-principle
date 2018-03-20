@@ -7,6 +7,7 @@ gem 'RedCloth'
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem 'compass'
+gem 'rake'
 
 group :jekyll_plugins do
   gem 'jekyll-timeago'
