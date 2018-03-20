@@ -12,4 +12,5 @@ gem 'rake'
 group :jekyll_plugins do
   gem 'jekyll-timeago'
   gem 'jekyll-paginate'
+  gem 'jekyll-whiteglass'
 end

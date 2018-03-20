@@ -1,6 +1,8 @@
 permalink: /:year/:month/:day/:title
 highlighter: 'pygments'
-paginate: 10
+theme: jekyll-whiteglass
+paginate_path: /posts/:num/
+paginate: 5
 exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md']
 destination: 'public'
 plugins:
