@@ -1,4 +1,4 @@
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title.html
 highlighter: 'pygments'
 theme: jekyll-whiteglass
 paginate_path: /posts/:num/
