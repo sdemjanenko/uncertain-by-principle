@@ -1,7 +1,0 @@
-<div class="profile">
-  <img src="/assets/images/profile_pic_lemur.jpg" height="266" width="300" />
-  <div class="intro">
-    I am {% timeago 1989-5-25 %} old and I live in SF.  I work on the Dashboard team at Cisco Meraki.
-    In my spare time, I rock climb, hike, ski, hack, shoot photos and think about the universe.
-  </div>
-</div>
