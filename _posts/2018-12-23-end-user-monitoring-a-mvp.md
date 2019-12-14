@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "End-user monitoring: a MVP"
 ---
 Over the past few months at Meraki I have built an end-user monitoring tool. Our goal is to
