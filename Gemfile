@@ -13,4 +13,5 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-whiteglass'
   gem 'octopress-minify-html'
+  gem 'jekyll_picture_tag'
 end
