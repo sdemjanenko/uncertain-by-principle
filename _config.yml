@@ -18,3 +18,6 @@ jekyll_timeago:
   depth: 1
   suffix: ''
 
+picture:
+  source: "assets/images/fullsize"
+  output: "assets/images/generated"
