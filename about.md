@@ -4,16 +4,11 @@ title: "Stephen Demjanenko"
 permalink: /about/
 ---
 
-<style>
-  .intro {
-    margin-top: 1em;
-  }
-</style>
-
 <div class="profile">
-  {% picture shasta.jpg --alt Alternate Text %}
+  {% picture shasta.jpg --alt Summiting Mount Shasta %}
 
-  <p class="intro">
-    I am {% timeago 1989-5-25 %} old and I live in San Francisco.  I am a Senior Web engineer at Cisco Meraki. For fun I climb rocks, read, road bike, ski, hike and take photos.
+  <p style="margin-top: 2em;">
+    I live in San Francisco where I enjoy cycling, rock climbing, reading, skiing, hiking and photography. I also cook and garden.
+    In a previous life I was a Senior web engineer at Cisco Meraki and before that I studied physics.
   </p>
 </div>
