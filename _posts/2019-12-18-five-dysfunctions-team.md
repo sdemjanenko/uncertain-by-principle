@@ -41,7 +41,7 @@ When issues are not resolved in a staff meeting you are moving that conflict bet
 solving this conflict.
 
 If you notice people retreating from conflict, remind them that addressing the conflict is necessary, it is for the good of the team.
-Model appropriate conflict behavior; modeling this dysfunction will result in it thriving.
+Model appropriate conflict behavior. If you model this dysfunction others will copy it.
 
 ### Level 3: Lack of commitment
 
@@ -65,4 +65,4 @@ Do team members care about the collective goals of the team or do they care abou
 goals and objectives measure results at the team-level.
 
 Commit to specific plans for what you and your team will accomplish in a given period. Make results clear and reward only the behaviors and actions that
-really contribute to the achievement of the team's goals. It can help to publically commit to specific results.
+really contribute to the achievement of the team's goals. It can help to publicly commit to specific results.
