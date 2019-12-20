@@ -14,4 +14,5 @@ group :jekyll_plugins do
   gem 'jekyll-whiteglass'
   gem 'octopress-minify-html'
   gem 'jekyll_picture_tag'
+  gem 'liquid_reading_time'
 end

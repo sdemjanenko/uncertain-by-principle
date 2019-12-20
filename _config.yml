@@ -7,6 +7,7 @@ exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rak
 plugins:
   - jekyll-paginate
   - jekyll-timeago
+  - liquid_reading_time
 
 title: Uncertain by Principle
 author:
