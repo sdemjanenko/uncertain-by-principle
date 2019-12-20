@@ -35,6 +35,7 @@ layout: default
             {% if post.external-url %}
               • <a href="{{ post.url | relative_url }}">Permalink</a>
             {% endif %}
+            • {{ post.content | reading_time }} minute read
           </p>
         </header>
 
