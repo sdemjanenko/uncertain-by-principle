@@ -4,7 +4,6 @@ ruby '2.6.5'
 gem 'jekyll'
 gem 'rack-jekyll'
 gem 'RedCloth'
-gem 'unicorn'
 gem 'compass'
 gem 'rake'
 
