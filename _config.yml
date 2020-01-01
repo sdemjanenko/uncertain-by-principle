@@ -22,3 +22,6 @@ jekyll_timeago:
 picture:
   source: "assets/images/fullsize"
   output: "assets/images/generated"
+
+favicon:
+  source: favicon.png
