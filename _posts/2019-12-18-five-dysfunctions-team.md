@@ -8,7 +8,7 @@ type: book_review
 ---
 
 This book tells a story about an fictional organization where the CEO was recently replaced. The new CEO observes many behaviors associated
-with unhealthy team dynamics. The CEO then leads several offsites tackle these problems head-on. Members of the executive team are pushed,
+with unhealthy team dynamics. The CEO then leads several offsites to tackle these problems head-on. Members of the executive team are pushed,
 some beyond their breaking point. The story ends with some members having left and others taking on new roles. All remaining members have
 a much stronger commitment to the team on which they are playing.
 
