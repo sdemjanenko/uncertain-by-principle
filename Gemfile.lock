@@ -101,7 +101,7 @@ GEM
     multi_js (0.1.0)
       uglifier (~> 2)
     multi_json (1.14.1)
-    nokogiri (1.10.7)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     objective_elements (1.1.1)
     octopress-hooks (2.6.2)
