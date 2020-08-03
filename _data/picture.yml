@@ -1,4 +1,4 @@
-markup_presets:
+presets:
   default:
     widths: [600, 900, 1200]
     formats: [webp, original]
